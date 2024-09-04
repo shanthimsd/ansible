@@ -1,0 +1,21 @@
+- name: Variables
+  hosts: web
+  vars:
+   course: "DevOps"
+   duration: "120hrs"
+   trainer: "shivakumar"
+  tasks:
+  - name: Calling Variables
+     ansible.builtin.debug:
+      msg: "Hi iam learing {{course}} the trainer is {{trainer}} and the duration of the course is {{duration}}"
+  - name: Calling Variables
+    vars:
+     course: "Ansible"
+     ansible.builtin.debug:
+      msg: "Hi iam learing {{course}} the trainer is {{trainer}} and the duration of the course is {{duration}}"
+   - name: Calling Variables
+     ansible.builtin.debug:
+      msg: "Hi iam learing {{course}} the trainer is {{trainer}} and the duration of the course is {{duration}}"
+
+
+      
