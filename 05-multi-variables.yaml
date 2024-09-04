@@ -6,13 +6,13 @@
    trainer: "shivakumar"
   tasks:
   - name: print the information 
-     ansible.builtin.debug:
+    ansible.builtin.debug:
       msg: "Hi iam learing {{course}} the trainer is {{trainer}} and the duration of the course is {{duration}}"
  
   - name: print the information agian
     vars:
      course: "Ansible"
-     ansible.builtin.debug:
+    ansible.builtin.debug:
       msg: "Hi iam learing {{course}} the trainer is {{trainer}} and the duration of the course is {{duration}}"
    
    - name: print the information again and again
