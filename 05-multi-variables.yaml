@@ -1,19 +1,21 @@
-- name: Variables
+- name: variables to print
   hosts: web
   vars:
    course: "DevOps"
    duration: "120hrs"
    trainer: "shivakumar"
   tasks:
-  - name: Calling Variables
+  - name: print the information 
      ansible.builtin.debug:
       msg: "Hi iam learing {{course}} the trainer is {{trainer}} and the duration of the course is {{duration}}"
-  - name: Calling Variables
+ 
+  - name: print the information agian
     vars:
      course: "Ansible"
      ansible.builtin.debug:
       msg: "Hi iam learing {{course}} the trainer is {{trainer}} and the duration of the course is {{duration}}"
-   - name: Calling Variables
+   
+   - name: print the information again and again
      ansible.builtin.debug:
       msg: "Hi iam learing {{course}} the trainer is {{trainer}} and the duration of the course is {{duration}}"
 
